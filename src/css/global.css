@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+
+:root {
+font-size: 16px;
+font-family: 'Open Sans';
+
+--text-primary:   #f9f7f7;
+--text-secondary: #000000;
+--bg-primary:     #f9f7f7;
+--bg-secondary:   #000000;
+
+--bg-box: #5c4a4a;
+--nav-Color: #191818;
+
+background-color: var(--bg-secondary);
+
+/* ------------------------------START LAYOUTS-------------------------*/
+
+/*Home page layout*/
+
+    /* Desktop */
+    --grid-columns-Home: 1fr 1fr;
+    --grid-rows-Home: 
+                    50vh 
+                    40vh 
+                    10vh;
+    --grid-areas-Home: 
+                    "topH topH"
+                    "contentLH contentRH"
+                    "bottomH bottomH ";
+    --grid-gap-Home: 0.2rem;
+
+    /* Mobile */
+
+    --grid-columns-Home-Mobile: 1fr;
+    --grid-rows-Home-Mobile: 
+                    40vh 
+                    20vh 
+                    20vh
+                    20vh;
+    --grid-areas-Home-Mobile: 
+                    "topH"
+                    "contentLH"
+                    "contentRH"
+                    "bottomH ";
+    --grid-gap-Home-Mobile: 0.2rem;
+
+
+
+/*About page layout*/
+
+    /* Desktop */
+    --grid-columns-About: 1fr 1fr 1fr;
+    --grid-rows-About: 
+                    20vh 
+                    70vh 
+                    10vh;
+    --grid-areas-About: 
+                    "topA topA topA"
+                    "contentLA contentMA contentRA"
+                    "bottomA bottomA bottomA";
+    --grid-gap-About: 0.2rem;
+
+    /* Mobile */
+    --grid-columns-About-Mobile: 1fr;
+    --grid-rows-About-Mobile: 
+                    20vh 
+                    20vh 
+                    20vh
+                    20vh
+                    20vh;
+
+    --grid-areas-About-Mobile: 
+                    "topA"
+                    "contentLA" 
+                    "contentMA"
+                    "contentRA"
+                    "bottomA";
+    --grid-gap-About-Mobile: 0.2rem;
+
+
+/*Consulting page layout*/
+
+/* Desktop */
+--grid-columns-Consulting: 1fr 2fr 1fr;
+--grid-rows-Consulting: 
+                10vh 
+                80vh 
+                10vh;
+--grid-areas-Consulting: 
+                "top top top"
+                "contentL contentM contentR"
+                "bottom bottom bottom";
+--grid-gap-Consulting: 0.2rem;
+
+/* Mobile */
+--grid-columns-About: 1fr;
+    --grid-rows-About: 
+                    20vh 
+                    60vh 
+                    20vh
+                    20vh;
+    --grid-areas-About: 
+                    "top"
+                    "contentL"
+                    "contentM"
+                    "contentR"
+                    "bottom";
+    --grid-gap-About: 0.2rem;
+
+
+/*Music page layout*/
+
+/* Desktop */
+--grid-columns-Music: 1fr 4fr 1fr;
+--grid-rows-Music: 
+                10vh 
+                80vh 
+                10vh;
+--grid-areas-Music: 
+                "top top top"
+                "contentL contentM contentR"
+                "bottom bottom bottom";
+--grid-gap-Music: 0.2rem;
+
+/* Mobile */
+--grid-columns-About: 1fr;
+--grid-rows-About: 
+                    10vh 
+                    80vh 
+                    10vh;
+--grid-areas-About: 
+                    "top top top"
+                    "contentL contentM contentR"
+                    "bottom bottom bottom";
+--grid-gap-About: 0.2rem;
+
+/*Projects page layout*/
+
+/* Desktop */
+--grid-columns-Projects: 1fr 1fr 1fr;
+--grid-rows-Projects: 
+                10vh 
+                20vh 
+                10vh;
+--grid-areas-Projects: 
+                "top top top"
+                "contentL contentM contentR"
+                "bottom bottom bottom";
+--grid-gap-Projects: 0.2rem;
+
+/* Mobile */
+--grid-columns-About: 1fr;
+--grid-rows-About: 
+                    10vh 
+                    80vh 
+                    10vh;
+--grid-areas-About: 
+                    "top top top"
+                    "contentL contentM contentR"
+                    "bottom bottom bottom";
+--grid-gap-About: 0.2rem;
+
+/*Test 1 page layout*/
+
+/* Desktop */
+--grid-columns-Test: 1fr 7fr 1fr;
+--grid-rows-Test: 
+                10vh 
+                80vh 
+                10vh;
+--grid-areas-Test: 
+                "top top top"
+                "contentL contentM contentR"
+                "bottom bottom bottom";
+--grid-gap-Test: 0.2rem;
+
+/* Mobile */
+--grid-columns-About: 1fr;
+--grid-rows-About: 
+                    10vh 
+                    80vh 
+                    10vh;
+--grid-areas-About: 
+                    "top top top"
+                    "contentL contentM contentR"
+                    "bottom bottom bottom";
+--grid-gap-About: 0.2rem;
+
+/* ------------------------------END LAYOUTS-------------------------*/
+
+
+}
+
+/* ------------------------------START SCROLLBAR-------------------------*/
+
+body::-webkit-scrollbar {
+width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+background: #6649b8;
+}
+
+/* ------------------------------END SCROLLBAR-------------------------*/
+  
