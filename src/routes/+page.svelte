@@ -1,7 +1,3 @@
-<script>
-	import { currentUser } from "$lib/pocketbase";
-
-</script>
 
     <h1>
         Welcome to GPS.com

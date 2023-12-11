@@ -3,6 +3,7 @@
 
     let email = '';
     let password = '';
+    let passwordConfirm = '';
     let error: string = '';
 
     // Reactive declaration
@@ -11,24 +12,21 @@
             error = $page.error.message;
         }
     }
-
-    function handleLogout() {
-        // Full-page reload after the form is submitted
-        window.location.reload();
-    }
-
 </script>
 
 <div class="form-container">
     <h2 class="register-title">
-        Login
+        Register for an account
     </h2>
+    <p class="already-registered">
+        Or <a href="/Login" class="sign-in-link">sign in</a> if you already have an account.
+    </p>
 
     {#if error}
         <p class="error-message">{error}</p>
     {/if}
     
-    <form method="POST" action="/Login?login" on:submit={handleLogout}>
+    <form method="POST" action="/Register?register">
         <div class="form-group">
             <label for="email" class="form-label">
                 Email
@@ -44,7 +42,14 @@
         </div>
 
         <div class="form-group">
-            <button type="submit" class="submit-button">Login</button>
+            <label for="passwordConfirm" class="form-label">
+                Confirm Password
+            </label>
+            <input type="password" bind:value={passwordConfirm} class="form-input" name="passwordConfirm" required />
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="submit-button">Register</button>
         </div>
     </form>
 </div>

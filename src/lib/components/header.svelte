@@ -7,14 +7,14 @@
 <nav>
     <ul class="sidebar" class:hidden={!sidebarShown}>
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <li on:click={() => sidebarShown = true}><a href="/"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#ffffff">
+        <li on:click={() => sidebarShown = true}><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#ffffff">
             <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
         <li><a href="/About">About Us</a></li>
         <li><a href="/Dashboard">Dashboard</a></li>
         <li><a href="/Map">Map</a></li>
         <li><a href="/Services">Services</a></li>
         <li><a href="/Planning">Planning</a></li>
-        <li><a class="loginLink" href="/Login">Sign Up</a></li>
+        <li><a class="loginLink" href="/Register">Register</a></li>
     </ul>
     <ul>
         <li ><a class="logo-Link" href="/">GPS.com </a></li>
@@ -23,7 +23,7 @@
         <li class="hideOnMobile"><a href="/Map">Map</a></li>
         <li class="hideOnMobile"><a href="/Services">Services</a></li>
         <li class="hideOnMobile"><a href="/Planning">Planning</a></li>
-        <li class="hideOnMobile"><a class="loginLink" href="/Login">Sign Up</a></li>
+        <li class="hideOnMobile"><a class="loginLink" href="/Register">Register</a></li>
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <li class="menu-button"  on:click={() => sidebarShown = !sidebarShown}><a class="menu-Link"href="/"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#ffffff">
             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
